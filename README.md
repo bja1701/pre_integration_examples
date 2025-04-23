@@ -31,7 +31,7 @@ Make sure you specifiy correct python version, etc. while runing your "cmake .."
 
 ### lm.ipynb
 
-Batch optimizer. Taken directly from https://gtbook.github.io/gtsam-examples/ImuFactorExample101.html.
+Batch optimizer. Taken directly from https://gtbook.github.io/gtsam-examples/ImuFactorExample101.html as a starting point.
 
 ### isam.ipynb
 
@@ -45,7 +45,6 @@ Main difference between this file and the isam.ipynb is the way that we are sett
 
 Same as directly above except with added unary constraints.
 
-
 ### fixed_lag_smoother.ipynb
 
 This is an implementation of an incremental fixed lag smoother using pre-integrated imu factors. Based on the previous scripts. And used the python example of Batch fixed lag smoother in python from gtsam (https://github.com/borglab/gtsam/blob/develop/python/gtsam/examples/FixedLagSmootherExample.py) as well as the incremental example they have in C++ () -- using fixed lag smoother functions gtsam has recreated required building gtsam from source
@@ -54,9 +53,7 @@ This is an implementation of an incremental fixed lag smoother using pre-integra
 
 Incremental fixed lag smoother with added unaries. This is what we are going for. A sliding window factor graph that also adds unary constraints.
 
-### factor_graph.sh
 
-Just a script to launch a useful tmux configuration to test the factor graph using ros2 bags. You can "ros2 bag play" in one terminal, while another terminal sends init empty messages to the factor graph node, and you can use another termianl to go into the docker container and run the factor graph.
 
 
 
