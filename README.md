@@ -35,11 +35,11 @@ Batch optimizer. Taken directly from https://gtbook.github.io/gtsam-examples/Imu
 
 ### isam.ipynb
 
-Adapted the lm.ipynb example to be incremental. Used this example (https://github.com/borglab/gtsam/blob/develop/python/gtsam/examples/ImuFactorISAM2Examplepy), which is included also.
+Adapted the lm.ipynb example to be incremental. Used this example (https://github.com/borglab/gtsam/blob/develop/python/gtsam/examples/ImuFactorISAM2Examplepy) for help.
 
 ### isam_imu_predict.ipynb
 
-Main difference between this file and the isam.ipynb is the way that we are setting an initial estimate for X and V for each pose and velocity node. I am using the pre-integration to predict X and V here (dead reckoning) rather than just adding noise to the true pose and velocity.
+Main difference between this file and the isam.ipynb is the way that we are setting an initial estimate for X and V for each pose and velocity node. Using the pre-integration to predict X and V here (dead reckoning) rather than just adding noise to the true pose and velocity.
 
 ### isam_imu_predict_with_unaries.ipynb
 
@@ -51,7 +51,7 @@ This is an implementation of an incremental fixed lag smoother using pre-integra
 
 ### ifls_with_unary.ipynb
 
-Incremental fixed lag smoother with added unaries. This is what we are going for. A sliding window factor graph that also adds unary constraints.
+Incremental fixed lag smoother with added unaries. This is the goal. A sliding window factor graph that also adds unary constraints.
 
 
 
