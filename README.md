@@ -11,7 +11,9 @@ Python environment that should work (see the environment.yaml, and you can creat
  - graphviz
  - pybind11-stubgen
  - pyparsing 
- - double check any other packages that the instructions from gtsam form the link below specify, and make sure you have your python environment activated when you try to build gtsam from source (see building from source)
+ - double check any other packages that the instructions from gtsam form the link below specify, and make sure you have your python environment activated when you try to build gtsam from source (see building from source).
+
+ And of course get whatever your favorite set up for jupyter notebooks ready.
 
 
 Follow the instructions below. 
