@@ -3,7 +3,7 @@ class TimeSync:
 
         self.msg_queue = []         # append message of specific sensor to queue
         self.last_pose_key = None
-        self.debug_mode = False
+        self.debug_mode = True
 
     def add_to_queue(self, msg):
         self.msg_queue.append(msg)
@@ -93,7 +93,6 @@ class TimeSync:
                         poseKey_to_add = new_id
                         msg_to_add, time_stamp = self.msg_queue.pop(0)                    
                         self.last_pose_key = new_id
-                        # return poseKey_to_add, msg_to_add, time_stamp
             else:
                 self.debug_print('The oldest measurement time is newer than the new_id, we are done\n')
                 in_future = True
