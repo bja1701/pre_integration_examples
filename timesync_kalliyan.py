@@ -21,7 +21,7 @@ class TimeSync:
 
         '''
 
-        self.last_pose_key = initialNode
+        # self.last_pose_key = initialNode
 
         # A flag to determine if all remaining measurements are in the future relative to the current pose key's time
         in_future = False
@@ -93,7 +93,7 @@ class TimeSync:
                         poseKey_to_add = new_id
                         msg_to_add, time_stamp = self.msg_queue.pop(0)                    
                         self.last_pose_key = new_id
-                        return poseKey_to_add, msg_to_add, time_stamp
+                        # return poseKey_to_add, msg_to_add, time_stamp
             else:
                 self.debug_print('The oldest measurement time is newer than the new_id, we are done\n')
                 in_future = True
