@@ -54,8 +54,27 @@ Same as directly above except with added unary constraints.
 This is an implementation of an incremental fixed lag smoother using pre-integrated imu factors. Based on the previous scripts. And used the python example of Batch fixed lag smoother in python from gtsam (https://github.com/borglab/gtsam/blob/develop/python/gtsam/examples/FixedLagSmootherExample.py) as well as the incremental example they have in C++ () -- using fixed lag smoother functions gtsam has recreated required building gtsam from source
 
 ### ifls_with_unary.ipynb
-
 Incremental fixed lag smoother with added unaries. This is the goal. A sliding window factor graph that also adds unary constraints.
+
+
+### error_functions.py
+
+Necessary error functions for unary factors
+
+### FINAL_BOSS_time_sync_ifls_with_unary.ipynb
+
+Time synced with fixed lag smoother and unaries.
+
+### time_sync_fixed.py
+
+Matthew's new implementation of the timesync class
+
+### time_sync_isam_predict_with_unaries.ipynb
+
+Not fixed lag smoother, but next best file
+
+
+
 
 
 

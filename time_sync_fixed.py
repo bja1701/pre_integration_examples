@@ -87,9 +87,9 @@ class TimeSync:
         self.debug_print(f'keep_current_unary: {keep_current_unary}')
         self.debug_print(f'Length of queue: {len(self.msg_queue)}')
 
-        # print(f'Time pairs synced (sensor time stamp to node time):')
-        # for meas, key, time in key_unary_pairs:
-        #     print(f'{time} : {key_to_time[key]}')
+        print(f'Time pairs synced (sensor time stamp to node time):')
+        for meas, key, time in key_unary_pairs:
+            print(f'{time} : {key_to_time[key]}')
             
 
         return key_unary_pairs, nodes_without_unary
