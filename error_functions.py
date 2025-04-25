@@ -164,6 +164,7 @@ def error_dvl(measurement: np.ndarray, this: gtsam.CustomFactor,
     
     error = vel - measurement
     
+    # chat gpt helped on this part -- good to check this first
     if jacobians is not None:
         jacobians[0] = np.eye(3)
         
