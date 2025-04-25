@@ -158,11 +158,14 @@ def error_dvl(measurement: np.ndarray, this: gtsam.CustomFactor,
     :return: the unwhitened error
     """
     key = this.keys()[0]
-
     vel = values.atVector(key)
-    error = vel - measurement
-    if jacobians is not None:
-        jacobians[0] = -np.eye(1) 
-        jacobians[1] = np.eye(1) 
 
+    # Three rows bc [x, y, z] from gps state, six columns bc the state of this node is Pose3
+    
+    error = vel - measurement
+    
+    # chat gpt helped on this part -- good to check this first
+    if jacobians is not None:
+        jacobians[0] = np.eye(3)
+        
     return error
