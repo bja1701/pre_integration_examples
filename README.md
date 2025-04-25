@@ -2,6 +2,9 @@
 
 Note, before running anything, it is generally a good idea to restart the environment kernel you are using to run the notebooks, especially after you have made changes and are running into unexpected behavior.
 
+Here are all GTSAM python examples: https://github.com/borglab/gtsam/tree/develop/python/gtsam/examples
+GTSAM C++ examples: https://github.com/borglab/gtsam/tree/develop/examples
+
 ## Pre-Reqs:
 
 Python environment that should work (see the environment.yaml, and you can create your python environment with this yaml: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
@@ -72,6 +75,9 @@ Matthew's new implementation of the timesync class
 ### time_sync_isam_predict_with_unaries.ipynb
 
 Not fixed lag smoother, but next best file
+
+
+
 
 
 
